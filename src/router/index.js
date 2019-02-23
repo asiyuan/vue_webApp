@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import '@/common/stylus/reset.styl'
 
 import Msite from '../page/Msite/Msite.vue'
 import Order from '../page/Order/Order.vue'
@@ -11,6 +10,10 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/',
+      redirect: '/msite'
+    },
     {
       path: '/msite',
       component: Msite
